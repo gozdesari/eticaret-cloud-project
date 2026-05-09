@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "http://16.16.204.212:3000";
 
 const productForm = document.getElementById("productForm");
 const orderForm = document.getElementById("orderForm");
