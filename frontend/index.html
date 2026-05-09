@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulut Tabanlı E-Ticaret Uygulaması</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bulut Tabanlı E-Ticaret Uygulaması</h1>
+    <p>Ürün yönetimi, stok takibi ve sipariş oluşturma sistemi</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Ürün Ekle</h2>
+      <form id="productForm">
+        <input type="text" id="name" placeholder="Ürün adı" required />
+        <input type="number" id="price" placeholder="Fiyat" required />
+        <input type="number" id="stock" placeholder="Stok" required />
+        <button type="submit">Ürün Ekle</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Ürünler</h2>
+      <div id="products"></div>
+    </section>
+
+    <section class="card">
+      <h2>Sipariş Oluştur</h2>
+      <form id="orderForm">
+        <input type="text" id="customerName" placeholder="Müşteri adı" required />
+        <input type="number" id="productId" placeholder="Ürün ID" required />
+        <input type="number" id="quantity" placeholder="Adet" required />
+        <button type="submit">Sipariş Ver</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Siparişler</h2>
+      <div id="orders"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
